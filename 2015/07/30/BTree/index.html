@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hothoren的博客V0.09</title>
+  <title>B树——思路、及C语言代码的实现 | Hothoren的博客V0.09</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="编程爱好者，正在逐步完善技能树。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hothoren的博客V0.09">
-<meta property="og:url" content="http://Hothoren.github.io/index.html">
+  <meta name="description" content="0. 序   本人现读本科大二，这学期学习数据结构，老师为我们的期末作业布置一道任选题，而我一直以来都有听说B树是一棵挺神奇的树，所以我选择了它，当然更重要的原因是因为B树的难度最高，我喜欢做有挑战性的工作。同时，我听我基友说他热衷于将自己所学所想分享到博客园上，故才有了这样一篇文章。希望我能够在写博客的同时学习到更多东西，同时也能帮助到其他遇到或者即将遇到雷同问题的初学者们。
+1. 关于B树">
+<meta property="og:type" content="article">
+<meta property="og:title" content="B树——思路、及C语言代码的实现">
+<meta property="og:url" content="http://Hothoren.github.io/2015/07/30/BTree/index.html">
 <meta property="og:site_name" content="Hothoren的博客V0.09">
-<meta property="og:description" content="编程爱好者，正在逐步完善技能树。">
+<meta property="og:description" content="0. 序   本人现读本科大二，这学期学习数据结构，老师为我们的期末作业布置一道任选题，而我一直以来都有听说B树是一棵挺神奇的树，所以我选择了它，当然更重要的原因是因为B树的难度最高，我喜欢做有挑战性的工作。同时，我听我基友说他热衷于将自己所学所想分享到博客园上，故才有了这样一篇文章。希望我能够在写博客的同时学习到更多东西，同时也能帮助到其他遇到或者即将遇到雷同问题的初学者们。
+1. 关于B树">
+<meta property="og:image" content="http://images0.cnblogs.com/blog2015/760811/201507/130027377834221.png">
+<meta property="og:image" content="http://images0.cnblogs.com/blog2015/760811/201507/162342587668724.png">
+<meta property="og:image" content="http://images0.cnblogs.com/blog2015/760811/201507/162343115168029.png">
+<meta property="og:updated_time" content="2015-07-30T09:18:36.200Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hothoren的博客V0.09">
-<meta name="twitter:description" content="编程爱好者，正在逐步完善技能树。">
+<meta name="twitter:title" content="B树——思路、及C语言代码的实现">
+<meta name="twitter:description" content="0. 序   本人现读本科大二，这学期学习数据结构，老师为我们的期末作业布置一道任选题，而我一直以来都有听说B树是一棵挺神奇的树，所以我选择了它，当然更重要的原因是因为B树的难度最高，我喜欢做有挑战性的工作。同时，我听我基友说他热衷于将自己所学所想分享到博客园上，故才有了这样一篇文章。希望我能够在写博客的同时学习到更多东西，同时也能帮助到其他遇到或者即将遇到雷同问题的初学者们。
+1. 关于B树">
   
     <link rel="alternative" href="/atom.xml" title="Hothoren的博客V0.09" type="application/atom+xml">
   
@@ -190,9 +197,7 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-BTree" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-BTree" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2015/07/30/BTree/" class="article-date">
@@ -208,12 +213,23 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/30/BTree/">B树——思路、及C语言代码的实现</a>
+    <h1 class="article-title" itemprop="name">
+      B树——思路、及C语言代码的实现
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据结构/">数据结构</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -930,145 +946,62 @@ arr[i] = d.key;
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据结构/">数据结构</a></li></ul>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/07/30/haha/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">哈哈</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
 
-
-
-
-
-  
-    <article id="post-haha" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/07/30/haha/" class="article-date">
-  	<time datetime="2015-07-30T03:51:48.000Z" itemprop="datePublished">2015-07-30</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/30/haha/">哈哈</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="哈">哈</h1><h2 id="哈哈">哈哈</h2><h3 id="哈哈哈">哈哈哈</h3><h4 id="哈哈哈哈">哈哈哈哈</h4><h5 id="哈哈哈哈哈">哈哈哈哈哈</h5><h6 id="哈哈哈哈哈哈">哈哈哈哈哈哈</h6><p>终于把博客搭起来了，容我开心开心。<br>哇咔咔~<br>我就是这么逗比~<br>本文作为测试用文，请无视。<br><img src="https://raw.githubusercontent.com/Hothoren/BlogSource/master/IMG/ME.jpg" alt=""></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/想到什么写什么/">想到什么写什么</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="BTree" data-title="B树——思路、及C语言代码的实现" data-url="http://Hothoren.github.io/2015/07/30/BTree/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"Hothoren"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
 
 
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/07/30/hello-world/" class="article-date">
-  	<time datetime="2015-07-30T01:49:58.510Z" itemprop="datePublished">2015-07-30</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/30/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -1092,8 +1025,8 @@ arr[i] = d.key;
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
